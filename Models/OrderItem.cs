@@ -2,7 +2,7 @@
 {
     public class OrderItem
     {
-        public OrderItem()
+        private OrderItem()
         { }
 
         public OrderItem(Product product, int count)

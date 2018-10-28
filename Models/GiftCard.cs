@@ -10,6 +10,8 @@ namespace Shop.Models
         public decimal Balance { get; private set; }
         public string Number { get; private set; }
 
+        private GiftCard() { }
+
         public GiftCard(string number, decimal balance, DateTime startDate, DateTime endDate)
         {
             if (string.IsNullOrWhiteSpace(number))

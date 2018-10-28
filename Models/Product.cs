@@ -5,6 +5,11 @@ namespace Shop.Models
 {
     public class Product
     {
+        private Product()
+        {
+
+        }
+
         public Product(string name, decimal price)
         {
             if (string.IsNullOrWhiteSpace(name))
