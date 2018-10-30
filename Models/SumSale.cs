@@ -4,7 +4,10 @@ namespace Shop.Models
 {
     public class SumSale : Discount
     {
+        public int Id { get; set; }
         public decimal Sum { get; private set; }
+
+        private SumSale() { }
 
         public SumSale(decimal sum)
         {

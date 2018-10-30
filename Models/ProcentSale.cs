@@ -4,7 +4,10 @@ namespace Shop.Models
 {
     public class ProcentSale : Discount
     {
+        public int Id { get; set; }
         public byte Procent { get; private set; }
+
+        private ProcentSale() { }
 
         public ProcentSale(byte procent)
         {
