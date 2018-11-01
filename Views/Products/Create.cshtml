@@ -1,18 +1,7 @@
 ﻿@model Shop.Models.Product
-
 @{
-    Layout = null;
+    ViewData["Title"] = "Create new Product";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
-
 <h4>Product</h4>
 <hr />
 <div class="row">
@@ -43,5 +32,3 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-</body>
-</html>

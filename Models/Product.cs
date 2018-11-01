@@ -5,12 +5,12 @@ namespace Shop.Models
 {
     public class Product
     {
-        private Product()
+        /*private Product()
         {
 
-        }
+        }*/
 
-        public Product(string name, decimal price)
+        public Product(int id, string name, decimal price)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException("Продукт не может существовать без имени");
@@ -18,6 +18,7 @@ namespace Shop.Models
             if (price <= 0)
                 throw new ArgumentException("Продукт не может быть с отрицательной или нулевой ценой");
 
+            Id = id;
             Name = name;
             Price = price;
         }
